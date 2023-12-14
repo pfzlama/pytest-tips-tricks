@@ -4,7 +4,7 @@ install:
 
 test:
 	python -m pytest -vv --cov=hello --cov=greetings tests
-
+	python -m pytest --nbval notebook.ipynb
 format:
 	black *.py
 
